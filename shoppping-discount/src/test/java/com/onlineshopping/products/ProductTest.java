@@ -46,45 +46,45 @@ public class ProductTest extends TestCase {
 	
 	@Test
 	public void testHashCode() {
-		Product	employee1 = new Product("pen","grocerry",50);
-		Product	employee2 = new Product("pen","grocerry",50);
+		Product	product1 = new Product("pen","grocerry",50);
+		Product	product2 = new Product("pen","grocerry",50);
 	//	System.out.println(employee1.hashCode() == employee2.hashCode());
-		Assert.assertEquals(equal, employee1.hashCode() == employee2.hashCode());
-		assertEquals("Hash code same : ", true, employee1.hashCode() == employee2.hashCode()); 
+		Assert.assertEquals(equal, product1.hashCode() == product2.hashCode());
+		assertEquals("Hash code same : ", true, product1.hashCode() == product2.hashCode()); 
 	}
 	
 	@Test
 	public void testProductEqual() {
-		Product	employee1 = new Product("pen","grocerry",50);
-		Product	employee2 = new Product("pen","grocerry",50);
-		assertEquals("Product Equal : ", true, employee1.equals(employee2));
+		Product	product1 = new Product("pen","grocerry",50);
+		Product	product2 = new Product("pen","grocerry",50);
+		assertEquals("Product Equal : ", true, product1.equals(product2));
 	}
 	
 	@Test
 	public void testProductEqual1() {
-		Product	employee1 = new Product("pen","grocerry",50);
-		Product	employee2 = null;
-		assertEquals("Product Equal : ", false, employee1.equals(employee2));
+		Product	product1 = new Product("pen","grocerry",50);
+		Product	product2 = null;
+		assertEquals("Product Equal : ", false, product1.equals(product2));
 	}
 	
 	@Test
 	public void testProductEqual2() {
-		Product	employee1 = new Product("pen","grocerry",50);
-		Product	employee2 = new Product("Pencil","grocerry",50);
-		assertEquals("Product Equal : ", false, employee1.equals(employee2));
+		Product	product1 = new Product("pen","grocerry",50);
+		Product	product2 = new Product("Pencil","grocerry",50);
+		assertEquals("Product Equal : ", false, product1.equals(product2));
 	}
 	
 	@Test
 	public void testProductEqual3() {
-		Product	employee1 = new Product("pen","grocerry",50);
-		Product	employee2 = new Product("pen","Non grocerry",50);
-		assertEquals("Product Equal : ", false, employee1.equals(employee2));
+		Product	product1 = new Product("pen","grocerry",50);
+		Product	product2 = new Product("pen","Non grocerry",50);
+		assertEquals("Product Equal : ", false, product1.equals(product2));
 	}
 	
 	@Test
 	public void testProductEqual4() {
-		Product	employee1 = new Product("pen","grocerry",50);
-		Product	employee2 = new Product("pen","grocerry",60);
-		assertEquals("Product Equal : ", false, employee1.equals(employee2));
+		Product	product1 = new Product("pen","grocerry",50);
+		Product	product2 = new Product("pen","grocerry",60);
+		assertEquals("Product Equal : ", false, product1.equals(product2));
 	}
 }
