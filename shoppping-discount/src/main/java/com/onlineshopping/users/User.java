@@ -6,5 +6,7 @@ import java.util.Date;
  */
 public interface User {
 
-	public int discount(); 
+	public int discount();
+	public String getUser();
+	public String getUserId();
 }

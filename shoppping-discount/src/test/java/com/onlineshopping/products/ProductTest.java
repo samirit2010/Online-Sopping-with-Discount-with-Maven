@@ -15,9 +15,7 @@ public class ProductTest extends TestCase {
 	private boolean equal =true;
 	
 	protected void setUp() throws Exception {
-		//	super.setUp();
-		
-	        System.out.println("before");  
+			super.setUp();
 		}
 	
 	

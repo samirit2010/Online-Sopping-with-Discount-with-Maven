@@ -39,16 +39,16 @@ public class EmployeeTest extends TestCase {
 	public void testName() {
 		Employee employee = new Employee();
 		employee.setName("Name");
-		assertTrue(employee.getName().equals("Name"));
-		assertEquals("Name Set", "Name", employee.getName()); 
+		assertTrue(employee.getUser().equals("Name"));
+		assertEquals("Name Set", "Name", employee.getUser()); 
 	}
 	
 	@Test
 	public void testId() {
 		Employee employee = new Employee();
 		employee.setEmployeeId("1");
-		assertTrue(employee.getEmployeeId().equals("1"));
-		assertEquals("Id Set", "1", employee.getEmployeeId()); 
+		assertTrue(employee.getUserId().equals("1"));
+		assertEquals("Id Set", "1", employee.getUserId()); 
 	}
 	
 	@Test

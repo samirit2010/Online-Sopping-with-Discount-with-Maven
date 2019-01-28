@@ -32,16 +32,16 @@ public class AffiliateTest extends TestCase {
 	public void testName() {
 		Affiliate affiliate = new Affiliate(); 
 		affiliate.setName("Name");
-		assertTrue(affiliate.getName().equals("Name"));
-		assertEquals("Affiliate Name Set", "Name", affiliate.getName()); 
+		assertTrue(affiliate.getUser().equals("Name"));
+		assertEquals("Affiliate Name Set", "Name", affiliate.getUser()); 
 	}
 	
 	@Test
 	public void testId() {
 		Affiliate affiliate = new Affiliate(); 
 		affiliate.setAffiliateId("1");
-		assertTrue(affiliate.getAffiliateId().equals("1"));
-		assertEquals(" Affiliate Id Set", "1", affiliate.getAffiliateId()); 
+		assertTrue(affiliate.getUserId().equals("1"));
+		assertEquals(" Affiliate Id Set", "1", affiliate.getUserId()); 
 	}
 	
 	@Test

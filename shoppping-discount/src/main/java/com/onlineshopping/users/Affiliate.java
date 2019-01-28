@@ -28,20 +28,27 @@ public class Affiliate implements User {
 	//	this.discountPer=5;
 	}
 	
-	public String getAffiliateId() {
-		return affiliateId;
-	}
-
+	/*
+	 * public String getAffiliateId() { return affiliateId; }
+	 */
 	public void setAffiliateId(String affiliateId) {
 		this.affiliateId = affiliateId;
 	}
 
-	public String getName() {
-		return name;
-	}
+	/*
+	 * public String getName() { return name; }
+	 */
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getUser() {
+		return name;
+	}
+
+	public String getUserId() {
+		return affiliateId;
 	}
 	
 @Override
@@ -80,4 +87,6 @@ public int discount() {
 		return 10;
 		
 	}
+
+
 }

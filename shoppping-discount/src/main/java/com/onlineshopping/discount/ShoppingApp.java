@@ -14,7 +14,7 @@ public class ShoppingApp implements Payment {
 
 	
 	private User user;
-	Product product;
+	private Product product;
 	
 	public Product getProduct() {
 		return product;
@@ -48,6 +48,7 @@ public class ShoppingApp implements Payment {
 		if(this.product.getProductType().equalsIgnoreCase("Non grocerry")) {
 			disc=0 ;
 		}
+	
 		price= price- (price*disc/100);
 		
 		int multiplOfHundrade= price/100;

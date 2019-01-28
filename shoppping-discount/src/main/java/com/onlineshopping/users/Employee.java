@@ -24,21 +24,40 @@ public class Employee implements User {
 		
 	}
 	
-	public String getName() {
+	public String getUser() {
 		return name;
 	}
+	public String getUserId() {
+		return employeeId;
+	}
+	/*
+	 * public String getName() { return name; }
+	 */
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getEmployeeId() {
-		return employeeId;
-	}
+	/*
+	 * public String getEmployeeId() { return employeeId; }
+	 */
 
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
 	}
+	
+	/*
+	 * 	(non-Javadoc)
+	 * @see User#discount()
+	 * 
+	 * Give the percent of discount as per the User type
+	 */
+		
+		public int discount() {
+			return 30;
+		}
+		
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -77,16 +96,8 @@ public class Employee implements User {
 	
 
 	
-/*
- * 	(non-Javadoc)
- * @see User#discount()
- * 
- * Give the percent of discount as per the User type
- */
+
 	
-	public int discount() {
-		return 30;
-	}
 	
 }
 

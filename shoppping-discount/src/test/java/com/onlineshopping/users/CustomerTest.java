@@ -35,16 +35,16 @@ public class CustomerTest extends TestCase {
 	public void testName() {
 		// Customer customer = new Customer();
 		customer.setCustName("Name");
-		assertTrue(customer.getCustName().equals("Name"));
-		assertEquals("Customer Name Set", "Name", customer.getCustName()); 
+		assertTrue(customer.getUser().equals("Name"));
+		assertEquals("Customer Name Set", "Name", customer.getUser()); 
 	}
 	
 	@Test
 	public void testId() {
 	//	Customer customer = new Customer();
 		customer.setCustId("1");
-		assertTrue(customer.getCustId().equals("1"));
-		assertEquals("Id Set", "1", customer.getCustId()); 
+		assertTrue(customer.getUserId().equals("1"));
+		assertEquals("Id Set", "1", customer.getUserId()); 
 	}
 	
 	@Test

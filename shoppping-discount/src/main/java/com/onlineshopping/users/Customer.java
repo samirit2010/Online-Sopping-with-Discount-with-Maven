@@ -37,18 +37,28 @@ public class Customer implements User {
 		this.associatePeriod = experince;
 	}
 	
-	public String getCustName() {
-		return custName;
-	}
+	/*
+	 * public String getCustName() { return custName; }
+	 */
 	public void setCustName(String custName) {
 		this.custName = custName;
 	}
-	public String getCustId() {
-		return custId;
-	}
+
+	/*
+	 * public String getCustId() { return custId; }
+	 */
 	public void setCustId(String custId) {
 		this.custId = custId;
 	}
+	
+	public String getUser() {
+		return custName;
+	}
+
+	public String getUserId() {
+		return custId;
+	}
+	
 
 	/*
 	 * 	(non-Javadoc)
@@ -87,6 +97,7 @@ public class Customer implements User {
 			return false;
 		return true;
 	}
+
 	
 	
 }
